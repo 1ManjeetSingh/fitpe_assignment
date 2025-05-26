@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/navbar/Navbar';
 import { menuItems } from "./data/navLinks.js"
 import SideBar from './components/sidebar/SideBar.jsx';
 import Dashboard from './components/dashboard/DashBoard.jsx';
