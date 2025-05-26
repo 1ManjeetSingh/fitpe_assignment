@@ -1,0 +1,104 @@
+/* Parent container */
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+
+
+/* divider containers */
+.AnatomySection, .AppointmentSection {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 450px;
+    max-width: 570px;
+}
+
+/* Anatomy sections styling */
+.dashboard-heading, .activity-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dashboard-heading > h2, .activity-heading > h4 {
+    display: flex;
+    width: fit-content  ;
+    color: #282572;
+}
+.dashboard-heading > p, .status-cards > p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    color: #788192;
+}
+.dashboard-heading > p > span, .status-cards > p > span {
+    font-size: 12px;
+    color: #4c557a;
+}
+
+/* Human Anatomy image and cards styling*/
+.HealthStatusCards {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+.anatomy-img {
+    display: flex;
+    width: 100%;
+}
+.anatomy-img > img {
+    height: 360px;
+    border-radius: 10px;
+}
+
+.status-cards > p {
+    justify-content: end;
+    padding-top: 20px;
+}
+
+
+/* Activity section styling */
+.activity-heading > p > span {
+    font-size: 12px;
+    color: #a0aec0;
+}
+
+.activity-chart > img {
+    width: 100%;
+    height: 15vh;
+    min-height: 110px;
+    object-fit: contain;
+}
+
+@media (max-width: 1244px) {
+    .dashboard-container {
+        height: 80vh;
+        overflow-y: auto;
+    }
+    .dashboard-container::-webkit-scrollbar {
+  display: none;
+}
+}
+
+@media (max-width: 575px) {
+    .AnatomySection, .AppointmentSection {
+        min-width: 250px;
+    }
+    .HealthStatusCards {
+        flex-wrap: wrap;
+    }
+    .anatomy-img{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 385px) {
+    .dashboard-container {
+        height: 100%;
+    }
+}

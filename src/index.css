@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: #E2EBF8;
+  font-family: sans-serif;
+}
+
+@media (max-width: 385px) {
+  body {
+    padding: 0;
+  }
+}

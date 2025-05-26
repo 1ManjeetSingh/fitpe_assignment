@@ -1,0 +1,47 @@
+/* Parent container */
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #788192;
+}
+
+.menu-items > a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #8B98AF;
+}
+
+.menu-items.active, .menu-items.active > a {
+    font-weight: 600;
+    color: #322d8d;
+}
+
+h5{
+    font-weight: 400;
+    color: #b6c7e5;
+}
+
+.sidebarOverlay-container {
+    height: 100%;
+    width: fit-content;
+    background-color: white;
+    padding-inline: 10px;
+    margin-left: -10px;
+}

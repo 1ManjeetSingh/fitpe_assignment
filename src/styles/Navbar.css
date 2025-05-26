@@ -1,0 +1,122 @@
+/* NavBar container */
+.navbar-container {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    height: inherit;
+}
+
+
+/* Company name section*/
+.logo {
+    flex: 20%;
+    min-width: 160px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.logo > h1 {
+    margin: 0;
+}
+.logo span:nth-of-type(1) {
+    color: #22C1C6;
+}
+.logo span:nth-of-type(2) {
+    color: #11084A;
+}
+
+
+/* Search bar section */
+.searchBar {
+    flex: 35%;
+    min-width: 200px;
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+}
+
+.search-icon {
+    font-size: 24px;
+    color: #56546F;
+}
+.search-inputBox {
+    padding-top: 6px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+
+/* Profile container */
+.profile-container {
+    display: flex;
+    flex: 40%;
+    min-width: 182px;
+    justify-content: space-between;
+    align-items: center;
+}
+.notification-icon {
+    font-size: 28px;
+    color: #3933A0;
+    padding-top: 6px;
+}
+.user {
+    display: flex;
+    gap: 10px;
+}
+.user-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-icon > img {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+}
+.plus-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #3933A0;
+    width: 42px;
+    height: 42px;
+}
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #3933A0;
+    width: 42px;
+    height: 42px;
+}
+
+
+@media (min-width : 785px) {
+    .menu-icon{
+        display: none;
+    }
+}
+@media (max-width : 785px) {
+    .navbar-container {
+        gap: 0;
+    }
+    .logo {
+        min-width: 100px;
+    }
+    .searchBar, .user-icon, .plus-icon {
+        display: none;
+    }
+    .profile-container{
+        justify-content: end;
+        gap: 12px;
+    }
+}
